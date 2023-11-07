@@ -1,0 +1,6 @@
+@import '../base.block/theme.scss';
+
+.footer {
+    @include theme_font_s;
+    margin-top: var(--indent-xxxl);
+}
