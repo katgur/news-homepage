@@ -36,8 +36,8 @@ $desktop: 1440px;
     --bgr-default: hsl(240, 100%, 5%);
     --bgr-border: hsl(233, 8%, 79%);
 
-    --text-primary: hsl(36, 100%, 99%);
-    --text-secondary: hsl(233, 8%, 79%);
+    --text-primary: hsl(233, 8%, 79%);
+    --text-secondary: hsl(36, 100%, 99%);
     --text-accent: hsl(35, 77%, 62%);
     --text-link: hsl(233, 8%, 79%);
 }
@@ -71,6 +71,7 @@ $desktop: 1440px;
     --indent-l: 24px;
     --indent-xl: 28px;
     --indent-xxl: 32px;
+    --indent-xxxl: 36px;
 }
 
 @mixin theme_font_xl {
@@ -90,7 +91,8 @@ $desktop: 1440px;
 
 @mixin theme_font_s {
     font-family: 'Inter Regular', sans-serif;
-    font-size: 15pt;
+    font-size: 13pt;
+    line-height: 1.5em;
 }
 
 @mixin theme_font_menu {

@@ -1,7 +1,7 @@
 @import '../base.block/theme.scss';
 
 .hero {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     gap: var(--indent-m);
     margin-top: var(--indent-xxl);
@@ -34,7 +34,7 @@
 
 @media (min-width: $desktop) {
     .hero {
-        width: 67%;
+        width: 65%;
         flex-direction: row;
         flex-wrap: wrap;
     }
