@@ -1,21 +1,19 @@
 @font-face {
     font-family: "Inter Bold";
-    font-display: swap;
-    src: url('../../fonts/Inter-Bold.ttf') format('ttf');
+    src: url('../../fonts/Inter-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "Inter ExtraBold";
-    font-display: swap;
-    src: url('../../fonts/Inter-ExtraBold.ttf') format('ttf');
+    src: url('../../fonts/Inter-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "Inter Regular";
-    font-display: swap;
-    src: url('../../fonts/Inter-Regular.ttf') format('ttf');
+    src: url('../../fonts/Inter-Regular.ttf') format('truetype');
 }
 
+$mobile: 375px;
 $desktop: 1440px;
 
 @mixin theme {
@@ -28,8 +26,8 @@ $desktop: 1440px;
     --bgr-default: hsl(36, 100%, 99%);
     --bgr-border: hsl(236, 13%, 42%);
 
-    --text-primary: hsl(240, 100%, 5%);
-    --text-secondary: hsl(236, 13%, 42%);
+    --text-primary: hsl(236, 13%, 42%);
+    --text-secondary: hsl(240, 100%, 5%);
     --text-accent: hsl(236, 13%, 42%);
     --text-link: hsl(236, 13%, 42%);
 }
@@ -77,7 +75,7 @@ $desktop: 1440px;
 
 @mixin theme_font_xl {
     font-family: 'Inter ExtraBold', sans-serif;
-    font-size: 28pt;
+    font-size: 44pt;
 }
 
 @mixin theme_font_l {
