@@ -1,0 +1,56 @@
+@import '../base.block/theme.scss';
+
+.hero {
+    display: inline-flex;
+    flex-direction: column;
+    gap: var(--indent-m);
+    margin-top: var(--indent-xxl);
+}
+
+.hero__image {
+    width: 100%;
+}
+
+.hero__title {
+    @include theme_font_xl;
+}
+
+.hero__text {
+    @include theme_font_s;
+}
+
+.hero__link {
+    @include theme;
+    @include theme_color_accent;
+    padding: var(--indent-s) var(--indent-xxl);
+    width: fit-content;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-family: 'Inter Bold', sans-serif;
+    display: block;
+    margin-top: var(--indent-m);
+}
+
+@media (min-width: $desktop) {
+    .hero {
+        width: 65%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hero__image {
+        flex: 2;
+    }
+
+    .hero__title {
+        flex: 1;
+    }
+    
+    .hero__text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

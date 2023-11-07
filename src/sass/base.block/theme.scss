@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Inter Bold";
+    src: url('../../fonts/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Inter ExtraBold";
+    src: url('../../fonts/Inter-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: url('../../fonts/Inter-Regular.ttf') format('truetype');
+}
+
+$mobile: 375px;
+$desktop: 1440px;
+
+@mixin theme {
+    background-color: var(--bgr-default);
+    color: var(--text-primary);
+    border-color: var(--brg-border);
+}
+
+@mixin theme_color_light {
+    --bgr-default: hsl(36, 100%, 99%);
+    --bgr-border: hsl(236, 13%, 42%);
+
+    --text-primary: hsl(236, 13%, 42%);
+    --text-secondary: hsl(240, 100%, 5%);
+    --text-accent: hsl(236, 13%, 42%);
+    --text-link: hsl(236, 13%, 42%);
+}
+
+@mixin theme_color_dark {
+    --bgr-default: hsl(240, 100%, 5%);
+    --bgr-border: hsl(233, 8%, 79%);
+
+    --text-primary: hsl(233, 8%, 79%);
+    --text-secondary: hsl(36, 100%, 99%);
+    --text-accent: hsl(35, 77%, 62%);
+    --text-link: hsl(233, 8%, 79%);
+}
+
+@mixin theme_color_accent {
+    --bgr-default: hsl(5, 85%, 63%);
+    --bgr-border: hsl(36, 100%, 99%);
+
+    --text-primary: hsl(36, 100%, 99%);
+    --text-secondary: hsl(36, 100%, 99%);
+    --text-accent: hsl(36, 100%, 99%);
+    --text-link: hsl(36, 100%, 99%);
+}
+
+@mixin theme_color_menu {
+    --bgr-default: hsl(36, 100%, 99%);
+    --bgr-border: hsl(36, 100%, 99%);
+
+    --text-primary: hsl(36, 100%, 99%);
+    --text-secondary: hsl(36, 100%, 99%);
+    --text-accent: hsl(36, 100%, 99%);
+    --text-link: hsl(240, 100%, 5%);
+}
+
+@mixin theme_indent_default {
+    --indent-xxxs: 4px;
+    --indent-xxs: 8px;
+    --indent-xs: 12px;
+    --indent-s: 16px;
+    --indent-m: 20px;
+    --indent-l: 24px;
+    --indent-xl: 28px;
+    --indent-xxl: 32px;
+    --indent-xxxl: 36px;
+}
+
+@mixin theme_font_xl {
+    font-family: 'Inter ExtraBold', sans-serif;
+    font-size: 44pt;
+}
+
+@mixin theme_font_l {
+    font-family: 'Inter Bold', sans-serif;
+    font-size: 24pt;
+}
+
+@mixin theme_font_m {
+    font-family: 'Inter Bold', sans-serif;
+    font-size: 15pt;
+}
+
+@mixin theme_font_s {
+    font-family: 'Inter Regular', sans-serif;
+    font-size: 13pt;
+    line-height: 1.5em;
+}
+
+@mixin theme_font_menu {
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: var(--text-link);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text-secondary);
+}
+
+body {
+    @include theme;
+    @include theme_color_light;
+    @include theme_indent_default;
+}

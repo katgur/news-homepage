@@ -25,7 +25,7 @@ function html() {
 }
 
 function style() {
-    return src("src/sass/*/*.scss")
+    return src("src/sass/**/*.scss")
         .pipe(plumber())
         .pipe(sass())
         .pipe(postcss([
@@ -48,9 +48,9 @@ function images() {
 }
 
 function webp() {
-    return src("dist/img/*.{png,jpg}")
+    return src("dist/images/*.{png,jpg}")
         .pipe(convertwebp({ quality: 90 }))
-        .pipe(dest("dist/img/"));
+        .pipe(dest("dist/images/"));
 }
 
 function scripts() {

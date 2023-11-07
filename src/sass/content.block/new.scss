@@ -1,0 +1,39 @@
+@import '../base.block/theme.scss';
+
+.new {
+    @include theme;
+    @include theme_color_dark;
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--indent-xxl);
+    padding: var(--indent-l);
+}
+
+.new_title_l {
+    @include theme_font_l;
+    color: var(--text-accent);
+}
+
+.new_title_m {
+    @include theme_font_m;
+    margin-bottom: var(--indent-m);
+}
+
+.new__text {
+    @include theme_font_s;
+}
+
+.new__article {
+    border-bottom: 1px solid;
+    padding: var(--indent-xxl) 0;
+}
+
+.new__article:last-child {
+    border: 0;
+}
+
+@media (min-width: $desktop) {
+    .new {
+        width: 32%;
+    }
+}

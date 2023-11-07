@@ -1,54 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style/index.min.css">
+
   <title>Frontend Mentor | News homepage</title>
 </head>
-<body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+<body class="page">
+  <header class="header">
+    <div class="header__bar">
+      <img class="header__logo" src="./images/logo.svg" alt="W. logo">
+      <img class="header__burger" src="./images/icon-menu.svg" alt="Burger button">
+    </div>
+    <nav class="header__nav header__none">
+      <img class="header__close" src="./images/icon-menu-close.svg" alt="Close menu button">
+      <a class="header__link" href="#">Home</a>
+      <a class="header__link" href="#">New</a>
+      <a class="header__link" href="#">Popular</a>
+      <a class="header__link" href="#">Trending</a>
+      <a class="header__link" href="#">Categories</a>
+    </nav>
+  </header>
 
-  The Bright Future of Web 3.0?
+  <main class="page__main">
+    <article class="hero">
+      <picture>
+        <source media="(min-width: 1440px)" type="image/webp" srcset="./images/image-web-3-desktop.webp">
+        <source type="image/webp" srcset="./images/image-web-3-mobile.webp">
+        <source media="(min-width: 1440px)" srcset="./images/image-web-3-desktop.png">
+        <source srcset="./images/image-web-3-mobile.png">
+        <img class="hero__image" src="./images/image-web-3-mobile.jpg" alt="The Bright Future of Web 3.0?">
+      </picture>
+      <h1 class="hero__title">
+        The Bright Future of Web 3.0?
+      </h1>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+      <p class="hero__text">
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of
+        the people. But is it really fulfilling its promise?
+        <a class="hero__link" href="#">
+          Read more
+        </a>
+      </p>
+    </article>
 
-  Read more
+    <aside class="new">
+      <h2 class="new_title_l">New</h2>
 
-  New 
+      <article class="new__article">
+        <h3 class="new_title_m">Hydrogen VS Electric Cars</h3>
+        <p class="new__text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </article>
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+      <article class="new__article">
+        <h3 class="new_title_m">The Downsides of AI Artistry</h3>
+        <p class="new__text">
+          What are the possible adverse effects of on-demand AI image generation?
+        </p>
+      </article>
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+      <article class="new__article">
+        <h3 class="new_title_m">Is VC Funding Drying Up?</h3>
+        <p class="new__text">
+          Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+      </article>
+    </aside>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+    <ol class="list">
+      <li class="list__item">
+        <article class="list__article">
+          <picture>
+            <source type="image/webp" srcset="./images/image-retro-pcs.webp">
+            <source srcset="./images/image-retro-pcs.jpg">
+            <img class="list__image" src="./images/image-retro-pcs.jpg" alt="Retro PC">
+          </picture>
+          <h2 order="1" class="list__title">
+            Reviving Retro PCs
+          </h2>
+          <p class="list__text">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </article>
+      </li>
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
+      <li class="list__item">
+        <article class="list__article">
+          <picture>
+            <source type="image/webp" srcset="./images/image-top-laptops.webp">
+            <source srcset="./images/image-top-laptops.jpg">
+            <img class="list__image" src="./images/image-top-laptops.jpg" alt="Buttons on keyboard">
+          </picture>
+          <h2 order="2" class="list__title">Top 10 Laptops of 2022</h2>
+          <p class="list__text">
+            Our best picks for various needs and budgets.
+          </p>
+        </article>
+      </li>
 
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
+      <li class="list__item">
+        <article class="list__article">
+          <picture>
+            <source type="image/webp" srcset="./images/image-gaming-growth.webp">
+            <source srcset="./images/image-gaming-growth.jpg">
+            <img class="list__image" src="./images/image-gaming-growth.jpg" alt="Gaming joystick">
+          </picture>
+          <h2 order="3" class="list__title">
+            The Growth of Gaming
+          </h2>
+          <p class="list__text">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </article>
+      </li>
+    </ol>
+  </main>
 
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/katgur">katgur</a>.
+    </div>
+  </footer>
+
+  <script src="./js/menu.min.js" defer></script>
 </body>
+
 </html>
