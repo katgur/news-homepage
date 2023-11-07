@@ -108,20 +108,29 @@ $desktop: 1440px;
 }
 
 a:link,
-a:visited,
-a:active {
+a:visited {
     color: var(--text-link);
 }
 
-a:hover {
+a:hover, a:active {
     color: var(--text-accent);
     background-color: var(--bgr-accent);
 }
 
 h1,
 h2,
-h3 {
+h3,
+h2>a:visited, h2>a:link,
+h3>a:link, h3>a:visited {
     color: var(--text-secondary);
+}
+
+h2>a:active,
+h2>a:hover,
+h3>a:active,
+h3>a:hover {
+    color: var(--text-accent);
+    background-color: var(--bgr-accent);
 }
 
 body {
