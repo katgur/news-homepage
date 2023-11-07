@@ -1,0 +1,59 @@
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: var(--text-link);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text-secondary);
+}
+
+@mixin theme {
+    background-color: var(--bgr-default);
+    color: var(--text-primary);
+    border-color: var(--brg-border);
+}
+
+@mixin theme_color_light {
+    --bgr-default: hsl(36, 100%, 99%);
+    --bgr-border: hsl(236, 13%, 42%);
+
+    --text-primary: hsl(240, 100%, 5%);
+    --text-secondary: hsl(236, 13%, 42%);
+    --text-accent: hsl(236, 13%, 42%);
+    --text-link: hsl(236, 13%, 42%);
+}
+
+@mixin theme_color_dark {
+    --bgr-default: hsl(240, 100%, 5%);
+    --bgr-border: hsl(233, 8%, 79%);
+
+    --text-primary: hsl(36, 100%, 99%);
+    --text-secondary: hsl(233, 8%, 79%);
+    --text-accent: hsl(35, 77%, 62%);
+    --text-link: hsl(233, 8%, 79%);
+}
+
+@mixin theme_color_accent {
+    --bgr-default: hsl(5, 85%, 63%);
+    --bgr-border: hsl(36, 100%, 99%);
+
+    --text-primary: hsl(36, 100%, 99%);
+    --text-secondary: hsl(36, 100%, 99%);
+    --text-accent: hsl(36, 100%, 99%);
+    --text-link: hsl(36, 100%, 99%);
+}
+
+@mixin theme_indent_default {
+    --indent-xxxs: 4px;
+    --indent-xxs: 8px;
+    --indent-xs: 12px;
+    --indent-s: 16px;
+    --indent-m: 20px;
+    --indent-l: 24px;
+    --indent-xl: 28px;
+    --indent-xxl: 32px;
+}

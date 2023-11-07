@@ -25,7 +25,7 @@ function html() {
 }
 
 function style() {
-    return src("src/sass/*/*.scss")
+    return src("src/sass/*.scss")
         .pipe(plumber())
         .pipe(sass())
         .pipe(postcss([
