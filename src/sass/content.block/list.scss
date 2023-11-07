@@ -3,7 +3,7 @@
 .list {
     display: flex;
     flex-direction: column;
-    margin-top: var(--indent-xxxl);
+    margin-top: var(--indent-xxxxxl);
     gap: var(--indent-l);
 }
 
@@ -16,6 +16,10 @@
 .list__title {
     @include theme_font_m;
     margin-bottom: var(--indent-xxs);
+}
+
+.list__title>a:hover {
+    color: var(--text-accent2);
 }
 
 @mixin list__order {
