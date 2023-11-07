@@ -11,19 +11,19 @@
   <title>Frontend Mentor | News homepage</title>
 </head>
 
-<body>
-  <header>
-    <div>
-      <img src="./images/logo.svg" alt="W. logo">
-      <img src="./images/icon-menu.svg" alt="Burger button">
+<body class="page">
+  <header class="header">
+    <div class="header__bar">
+      <img class="header__logo" src="./images/logo.svg" alt="W. logo">
+      <img class="header__burger" src="./images/icon-menu.svg" alt="Burger button">
     </div>
-    <nav>
-      <img src="./images/icon-menu-close.svg" alt="Close menu button">
-      <a href="#">Home</a>
-      <a href="#">New</a>
-      <a href="#">Popular</a>
-      <a href="#">Trending</a>
-      <a href="#">Categories</a>
+    <nav class="header__nav header__none">
+      <img class="header__close" src="./images/icon-menu-close.svg" alt="Close menu button">
+      <a class="header__link" href="#">Home</a>
+      <a class="header__link" href="#">New</a>
+      <a class="header__link" href="#">Popular</a>
+      <a class="header__link" href="#">Trending</a>
+      <a class="header__link" href="#">Categories</a>
     </nav>
   </header>
 
@@ -130,6 +130,8 @@
       Coded by <a href="https://www.frontendmentor.io/profile/katgur">katgur</a>.
     </div>
   </footer>
+
+  <script src="./js/menu.min.js" defer></script>
 </body>
 
 </html>
