@@ -1,0 +1,55 @@
+@import '../base.block/theme.scss';
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--indent-xxxl);
+    gap: var(--indent-l);
+}
+
+.list__image {
+    float: left;
+    width: 100px;
+    margin-right: var(--indent-m);
+}
+
+.list__title {
+    @include theme_font_m;
+    margin-bottom: var(--indent-xxs);
+}
+
+@mixin list__order {
+    @include theme_font_l;
+    display: block;
+    color: rgba(92, 94, 120, 0.3);
+    margin-bottom: var(--indent-xxs);
+}
+
+.list__title[order="1"]::before {
+    @include list__order;
+    content: "01";
+}
+
+.list__title[order="2"]::before {
+    @include list__order;
+    content: "02";
+}
+
+.list__title[order="3"]::before {
+    @include list__order;
+    content: "03";
+}
+
+.list__text {
+    @include theme_font_s;
+}
+
+@media (min-width: $desktop) {
+    .list {
+        flex-direction: row;
+    }
+
+    .list__item {
+        flex: 1;
+    }
+}
