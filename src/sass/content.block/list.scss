@@ -18,6 +18,10 @@
     margin-bottom: var(--indent-xxs);
 }
 
+.list__title>a:hover {
+    color: var(--text-accent2);
+}
+
 @mixin list__order {
     @include theme_font_l;
     display: block;

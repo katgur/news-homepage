@@ -25,16 +25,19 @@ $desktop: 1440px;
 @mixin theme_color_light {
     --bgr-default: hsl(36, 100%, 99%);
     --bgr-border: hsl(236, 13%, 42%);
+    --bgr-accent: hsl(36, 100%, 99%);
 
     --text-primary: hsl(236, 13%, 42%);
     --text-secondary: hsl(240, 100%, 5%);
-    --text-accent: hsl(236, 13%, 42%);
+    --text-accent: hsl(35, 77%, 62%);
+    --text-accent2: hsl(5, 85%, 63%);
     --text-link: hsl(236, 13%, 42%);
 }
 
 @mixin theme_color_dark {
     --bgr-default: hsl(240, 100%, 5%);
     --bgr-border: hsl(233, 8%, 79%);
+    --bgr-accent: hsl(240, 100%, 5%);
 
     --text-primary: hsl(233, 8%, 79%);
     --text-secondary: hsl(36, 100%, 99%);
@@ -45,6 +48,7 @@ $desktop: 1440px;
 @mixin theme_color_accent {
     --bgr-default: hsl(5, 85%, 63%);
     --bgr-border: hsl(36, 100%, 99%);
+    --bgr-accent: hsl(240, 100%, 5%);
 
     --text-primary: hsl(36, 100%, 99%);
     --text-secondary: hsl(36, 100%, 99%);
@@ -55,10 +59,11 @@ $desktop: 1440px;
 @mixin theme_color_menu {
     --bgr-default: hsl(36, 100%, 99%);
     --bgr-border: hsl(36, 100%, 99%);
+    --bgr-accent: hsl(36, 100%, 99%);
 
     --text-primary: hsl(36, 100%, 99%);
     --text-secondary: hsl(36, 100%, 99%);
-    --text-accent: hsl(36, 100%, 99%);
+    --text-accent: hsl(35, 77%, 62%);
     --text-link: hsl(240, 100%, 5%);
 }
 
@@ -104,9 +109,13 @@ $desktop: 1440px;
 
 a:link,
 a:visited,
-a:hover,
 a:active {
     color: var(--text-link);
+}
+
+a:hover {
+    color: var(--text-accent);
+    background-color: var(--bgr-accent);
 }
 
 h1,
