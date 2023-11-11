@@ -24,6 +24,7 @@
 
 @mixin list__order {
     @include theme_font_l;
+    font-size: 30px;
     display: block;
     color: rgba(92, 94, 120, 0.3);
     margin-bottom: var(--indent-xxs);
@@ -51,9 +52,24 @@
 @media (min-width: $desktop) {
     .list {
         flex-direction: row;
+        gap: 28px;
     }
 
     .list__item {
         flex: 1;
+    }
+
+    .list__title {
+        font-size: 18px;
+    }
+
+    .list__image {
+        width: 100px;
+        margin-right: 24px;
+    }
+
+    .list__text {
+        font-size: 15px;
+        line-height: 1.7em;
     }
 }

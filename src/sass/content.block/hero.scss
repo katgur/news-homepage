@@ -34,10 +34,11 @@
 
 @media (min-width: $desktop) {
     .hero {
-        width: 65%;
+        width: 65.8%;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-top: var(--indent-xxxxl);
+        margin-top: 34px;
+        gap: 28px;
     }
 
     .hero__image {
@@ -46,6 +47,10 @@
 
     .hero__title {
         flex: 1;
+        margin-top: -2px;
+        letter-spacing: 0.01em;
+        line-height: 1em;
+        font-size: 42pt;
     }
     
     .hero__text {
@@ -53,5 +58,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        font-size: 15px;
+        line-height: 1.6em;
+        margin-top: -8px;
+    }
+
+    .hero__link {
+        padding: 13px 31px;
+        margin-top: 0;
+        font-size: 15px;
     }
 }

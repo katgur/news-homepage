@@ -52,7 +52,7 @@
 
 @media (min-width: 1440px) {
     .header {
-        padding-top: 72px;
+        padding-top: 70px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -68,6 +68,7 @@
         @include theme;
         @include theme_color_light;
         @include theme_font_s;
+        font-size: 16px;
         display: flex;
         flex-direction: row;
         width: fit-content;
@@ -79,7 +80,7 @@
 
     .header__link {
         padding: 0;
-        padding-left: 44px;
+        padding-left: 38px;
     }
 
     .header__link:nth-child(2) {
